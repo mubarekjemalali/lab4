@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="welcome xyz@xyz.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="130dp"
+        android:text="shop by categories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/electronics"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            android:src="@drawable/tv_sm_tile_320x220"
+            android:onClick="selection"/>
+
+
+        <ImageView
+            android:id="@+id/clothing"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            tools:layout_editor_absoluteX="187dp"
+            tools:layout_editor_absoluteY="105dp"
+            android:src="@drawable/lightweightjackets"
+            android:onClick="selection"/>
+
+        <TextView
+            android:id="@+id/labelClothing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:text="Clothing"
+            />
+
+        <TextView
+            android:id="@+id/labelElectronics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:text="Electronics"
+            android:textAlignment="center"
+           />
+
+        <ImageView
+            android:id="@+id/beauty"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:src="@drawable/lipstick_526025122_1000"
+            android:onClick="selection"/>
+
+        <ImageView
+            android:id="@+id/food"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:src="@drawable/wicker_basket_with_variety_of_grocery_products_isolated_on_white"
+            android:onClick="selection"/>
+
+        <TextView
+            android:id="@+id/labelBeauty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:text="Beauty"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="410dp"
+
+            />
+
+        <TextView
+            android:id="@+id/labelFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:text="Food"
+            tools:layout_editor_absoluteX="231dp"
+            tools:layout_editor_absoluteY="409dp"
+            />
+
+    </GridLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
